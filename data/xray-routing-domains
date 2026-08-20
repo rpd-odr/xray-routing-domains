@@ -1,3 +1,4 @@
+# Core services
 domain:github.com
 domain:githubusercontent.com
 domain:fanart.tv
@@ -12,12 +13,15 @@ domain:tmdb.org
 domain:tvmaze.com
 domain:coverartarchive.org
 domain:image.tmdb.org
+
+# Services from vless.list
 domain:metabrainz.org
 domain:cypwn.com
 domain:trakt.tv
 domain:elevenlabs.io
 domain:adguard.com
 domain:listenbrainz.org
+domain:pornhub.com
 domain:phncdn.com
 domain:etahub.com
 domain:epicgames.com
@@ -28,10 +32,15 @@ domain:rustorka.com
 domain:rutracker.org
 domain:therarbg.com
 domain:protondb.com
-domain:byspotify.com
+
+# Spotify
+domain:spotify.com
+domain:spotifycdn.com
+domain:spotifycdn.net
+domain:scdn.co
 domain:pscdn.co
 domain:spoti.fi
-domain:spotify.com
+domain:byspotify.com
 domain:spotify-everywhere.com
 domain:spotify.app.link
 domain:spotify.design
@@ -42,22 +51,21 @@ domain:spotifyjobs.com
 domain:spotifynewsroom.jp
 domain:spotilocal.com
 domain:tospotify.com
-domain:spotifycdn.com
-domain:scdn.co
 domain:audio4-ak-spotify-com.akamaized.net
-domain:cdn-spotify-experiments.conductrics.com
+domain:audio-ak-spotify-com.akamaized.net
 domain:heads-ak-spotify-com.akamaized.net
+domain:heads4-ak-spotify-com.akamaized.net
+domain:spotify-com.akamaized.net
 domain:spotify.com.edgesuite.net
 domain:spotify.map.fastly.net
 domain:spotify.map.fastlylb.net
-domain:audio-ak-spotify-com.akamaized.net
-domain:heads4-ak-spotify-com.akamaized.net
-domain:spotify-com.akamaized.net
-domain:t.me
-domain:telegram.me
+domain:cdn-spotify-experiments.conductrics.com
+
+# Telegram
 domain:telegram.org
-domain:telegram.dog
 domain:telegram.me
+domain:t.me
+domain:telegram.dog
 domain:telegra.ph
 domain:telesco.pe
 domain:cdn-telegram.org
@@ -66,6 +74,8 @@ domain:web.t.me
 domain:k.t.me
 domain:z.t.me
 domain:a.t.me
+
+# YouTube / Google video CDN
 domain:youtube.com
 domain:youtu.be
 domain:youtube-nocookie.com
