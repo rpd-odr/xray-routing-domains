@@ -40,3 +40,13 @@ jobs:
           git commit -m 'Build xray-routing-domains.dat'
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Publish public release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest routing rules
+          body: Automatically generated Xray routing rules.
+          files: xray-routing-domains.dat
+          overwrite_files: true
+          make_latest: true
