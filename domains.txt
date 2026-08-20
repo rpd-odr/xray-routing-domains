@@ -1,0 +1,14 @@
+domain:github.com
+domain:githubusercontent.com
+domain:fanart.tv
+domain:musicbrainz.org
+domain:mb3admin.com
+domain:opensubtitles.com
+domain:opensubtitles.org
+domain:theaudiodb.com
+domain:themoviedb.org
+domain:thetvdb.com
+domain:tmdb.org
+domain:tvmaze.com
+domain:coverartarchive.org
+domain:image.tmdb.org
