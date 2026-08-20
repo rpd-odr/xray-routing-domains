@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -36,4 +38,5 @@ jobs:
           git add xray-routing-domains.dat
           git diff --cached --quiet && exit 0
           git commit -m 'Build xray-routing-domains.dat'
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
