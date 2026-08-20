@@ -1,0 +1,39 @@
+name: Build geosite
+
+on:
+  push:
+    paths:
+      - 'data/xray-routing-domains'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+
+      - name: Build geosite.dat
+        run: |
+          git clone --depth 1 https://github.com/v2fly/domain-list-community.git /tmp/domain-list-community
+          cd /tmp/domain-list-community
+          go mod download
+          go run . --datapath="$GITHUB_WORKSPACE/data" --outputname=xray-routing-domains.dat --outputdir="$GITHUB_WORKSPACE"
+
+      - name: Commit generated DAT
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add xray-routing-domains.dat
+          git diff --cached --quiet && exit 0
+          git commit -m 'Build xray-routing-domains.dat'
+          git push
