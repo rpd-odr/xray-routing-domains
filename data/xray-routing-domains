@@ -55,6 +55,14 @@ domain:kinopoisk.tv
 domain:hdrezka.ag
 domain:rezka.ag
 
+#Claude
+domain:claude.ai
+domain:anthropic.com
+domain:usefathom.com
+domain:b-cdn.net
+domain:cloudflare.com
+
+
 # Spotify
 domain:spotify.com
 domain:spotifycdn.com
