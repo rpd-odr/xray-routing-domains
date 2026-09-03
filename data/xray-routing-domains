@@ -1,5 +1,8 @@
-#Other/my
+# Speedtest (Ookla) — associated
 domain:speedtest.net
+domain:ookla.com
+domain:speedtestcdn.com
+domain:speedtest-servers.speedtest.net
 
 # Core services
 domain:github.com
@@ -31,10 +34,25 @@ domain:epicgames.com
 domain:archive.org
 domain:ajay.app
 domain:retroachievements.org
-domain:rustorka.com
-domain:rutracker.org
 domain:therarbg.com
 domain:protondb.com
+
+# Torrent trackers & book
+domain:rutracker.org
+domain:rustorka.com
+domain:rutor.info
+domain:rutor.org
+domain:kinozal.tv
+domain:kinozal.cc
+domain:nnmclub.to
+domain:booktracker.org
+domain:flibusta.is
+domain:flibusta.club
+domain:lostfilm.tv
+domain:1337x.to
+domain:kinopoisk.tv
+domain:hdrezka.ag
+domain:rezka.ag
 
 # Spotify
 domain:spotify.com
